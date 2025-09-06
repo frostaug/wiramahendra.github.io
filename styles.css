@@ -1,0 +1,217 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #72727200;
+  background-image: url('img/Bg.jpeg');
+}
+
+header {
+  background: #083940c9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+#profile {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-position: center ;
+  background-image: url(img/profile.jpg);
+  background-size: 480px 700px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 25px;
+  background: white;
+  margin: 10px;
+  margin-top: 30px;
+  margin-right: 10px;
+  border-radius: 20px 60px 20px 60px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #0d178600;
+  color: white;
+}
+
+#skills-list{
+  display: flex;
+}
+
+#skills-list li{
+  flex-grow: 1;
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  background-position: center;
+  margin-left: 5px;
+  width: 50%;
+  height: auto;
+}
+
+#skills-list li:hover {
+  flex-grow: 10;
+  margin: 10px;
+  position: relative;
+  background-position: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+.konten.Inventor, .cnc .kontak-info{
+  display: flex;
+}
+
+.konten.Inventor div {
+  flex-grow: 1;
+  margin-left: 5px;
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 0px;
+  background-position: center ;
+}
+
+.konten.Inventor div:hover {
+  flex-grow: 10;
+  width: 200%;
+  height: auto;
+  margin: 0px;
+  position: relative;
+  padding: 5px;
+}
+
+div.video{
+  position: relative;
+  background: #1d202c7b;
+  padding: 10px;
+  margin: 5%;
+  border-radius: 20px 20px 20px 20px;
+  width: 80%;
+}
+
+div.video img{
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+}
+.kontak-info {
+  display: flex;
+  padding: 0px;
+  margin-left: 0px;
+  position: relative;
+  width: 100%;
+  background-position: center;
+}
+.kontak-info li {
+  flex-grow: 1;
+  list-style: none;
+  margin-left: 0px;
+  position: relative;
+  padding: 10px;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 13px;
+  object-fit: cover;
+}
+
+.kontak-info li:hover {
+  flex-grow: 10;
+  margin: 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-position: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row; /* Default: horizontal layout */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 800px;
+  gap: 20px;
+}
+
+.foto img {
+  width: 180px;
+  height: 180px;
+  border-radius: 20%;
+  border: 4px solid #063a46;
+  object-fit: cover;
+  position: relative;
+  margin-left: 70%;
+}
+
+.data {
+  flex: 1;
+}
+
+.data h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.data p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* 📱 Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto img {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .data {
+    width: 100%;
+  }
+}
