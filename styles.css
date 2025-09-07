@@ -7,14 +7,18 @@ body {
 }
 
 header {
-  background: #083940c9;
-  color: white;
-  padding: 20px;
+  background: #083940ca;
+  color: rgb(255, 255, 255);
+  padding: 10px;
   text-align: center;
   border-radius: 50px;
   margin: 10px;
 }
-
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 #profile {
   display: inline-flex;
   width: 200px;
@@ -28,22 +32,31 @@ header {
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 5px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-top:  10px;
+  flex-wrap: wrap;
+  font-display: swap;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul li a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 section {
   padding: 25px;
-  background: white;
+  background: rgba(255, 255, 255, 0.984);
   margin: 10px;
   margin-top: 30px;
   margin-right: 10px;
@@ -132,19 +145,21 @@ div.video img{
   position: relative;
   width: 100%;
   background-position: center;
+  max-width: 800px;
 }
 .kontak-info li {
   flex-grow: 1;
   list-style: none;
-  margin-left: 0px;
+  margin-left: 20%;
   position: relative;
   padding: 10px;
   background-position: center;
-  width: 100%;
+  width: 50%;
   height: auto;
   text-align: center;
   font-size: 13px;
   object-fit: cover;
+  max-width: 800px;
 }
 
 .kontak-info li:hover {
@@ -155,6 +170,8 @@ div.video img{
   height: auto;
   padding: 10px;
   background-position: center;
+  max-width: 800px;
+  
 }
 
 .about-me {
@@ -190,13 +207,43 @@ div.video img{
   margin: 0;
   font-size: 20px;
   color: #000000;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .data p {
   margin: 8px 0;
   font-size: 16px;
   color: #000000;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+.foto-magang-pt {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: #0000006f 0px 4px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-shadow: #00000049 0px 4px 12px;
+  box-sizing: content-box;
+  
+}
+
+svg {
+  transition: transform 0.3s ease;
+  margin-left: 90%;
+  fill: #0a56447b;
+}
+
+svg:hover {
+  transform: translateY(-3px);
+  fill: #0a5a5f;
+  cursor: pointer;
+  margin-left: 90%;
+}
+
 
 /* 📱 Responsif untuk layar kecil */
 @media screen and (max-width: 768px) {
@@ -210,7 +257,20 @@ div.video img{
     margin-left: auto;
     margin-right: auto;
   }
+  .kontak{
+    flex-direction: column;
+    text-align: center;
+  }
+  .kontak-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .kontak-info li {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
+  }
   .data {
     width: 100%;
   }
